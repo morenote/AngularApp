@@ -1,0 +1,31 @@
+<div class="button-area">
+
+  <button class="btn"  nz-button nzType="dashed" nzSize="large" nzShape="circle">
+    <i nz-icon nzType="book"></i>
+  </button>
+  <button class="btn"  nz-button nzType="dashed" nzSize="large" nzShape="circle">
+
+    <i nz-icon nzType="branches" nzTheme="outline"></i>
+  </button>
+  <button class="btn"  nz-button nzType="dashed" nzSize="large" nzShape="circle">
+    <i nz-icon nzType="file-zip" nzTheme="outline"></i>
+  </button>
+  <button class="btn"  nz-button nzType="dashed" nzSize="large" nzShape="circle">
+    <i nz-icon nzType="delete" nzTheme="outline"></i>
+  </button>
+</div>
+<div class="tree-area">
+  <nz-tree [nzData]="nodes" nzShowIcon></nz-tree>
+  <nz-tree [nzData]="nodes" nzShowIcon [nzExpandedIcon]="multiExpandedIconTpl">
+    <ng-template #multiExpandedIconTpl let-node let-origin="origin">
+        <span
+          *ngIf="!origin.isLeaf"
+          nz-icon
+          [nzType]="node.isExpanded ? 'folder-open' : 'folder'"
+          class="ant-tree-switcher-line-icon"
+        ></span>
+      <span *ngIf="origin.isLeaf" nz-icon nzType="file" class="ant-tree-switcher-line-icon"></span>
+    </ng-template>
+  </nz-tree>
+</div>
+
