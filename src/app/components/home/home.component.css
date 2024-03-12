@@ -5,7 +5,7 @@ html, body {
 
 .header {
   height: 48px;
-  background: lightblue;
+  /*background: lightblue;*/
   width: 100%;
 }
 
@@ -18,7 +18,7 @@ html, body {
 
 .footer {
   height: 24px;
-  background: lightgreen;
+  /*background: lightgreen;*/
   bottom: 0;
   width: 100%;
 }
@@ -32,6 +32,6 @@ html, body {
 .main {
   height: 100%;
   width: calc(100% - 300px);;
-  background: aqua;
+  /*background: aqua;*/
   margin-left: 300px;
 }
