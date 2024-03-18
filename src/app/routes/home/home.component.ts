@@ -5,9 +5,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {NzBreadCrumbComponent, NzBreadCrumbItemComponent} from "ng-zorro-antd/breadcrumb";
-import {HeaderComponent} from "../header/header.component";
-import {AsideComponent} from "../aside/aside.component";
-import {EditorTabComponent} from "../editor-tab/editor-tab.component";
+import {HeaderComponent} from "../../components/header/header.component";
+import {AsideComponent} from "../../components/aside/aside.component";
+import {EditorTabComponent} from "../../components/editor-tab/editor-tab.component";
 
 @Component({
   selector: 'app-home',

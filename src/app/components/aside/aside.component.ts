@@ -23,7 +23,7 @@ export class AsideComponent {
       title: '文件夹 1',
       key: '100',
       expanded: true,
-      icon: 'folder',
+      // icon: 'folder',
       children: [
         { title: '测试', key: '1001', icon: 'file-markdown', isLeaf: true },
         { title: '测试', key: '1002', icon: 'file-markdown', isLeaf: true }

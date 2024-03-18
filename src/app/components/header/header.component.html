@@ -1,6 +1,53 @@
 <ul nz-menu nzMode="horizontal">
+  <li nz-submenu nzPlacement="topLeft" nzTitle="仓库">
+    <ul>
+      <li nz-menu-group nzTitle="更新">
+        <ul>
+          <li nz-menu-item>Option 1</li>
+          <li nz-menu-item>Option 2</li>
+        </ul>
+      </li>
+      <li nz-menu-group nzTitle="拉取">
+        <ul>
+          <li nz-menu-item>Option 3</li>
+          <li nz-menu-item>Option 4</li>
+          <li nz-submenu nzTitle="Sub Menu">
+            <ul>
+              <li nz-menu-item nzDisabled>Option 5</li>
+              <li nz-menu-item>Option 6</li>
+            </ul>
+          </li>
+          <li nz-submenu nzDisabled nzTitle="Disabled Sub Menu">
+            <ul>
+              <li nz-menu-item>Option 5</li>
+              <li nz-menu-item>Option 6</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-menu-group nzTitle="服务器">
+        <ul>
+          <li nz-menu-item>Option 3</li>
+          <li nz-menu-item>Option 4</li>
+          <li nz-submenu nzTitle="Sub Menu">
+            <ul>
+              <li nz-menu-item nzDisabled>Option 5</li>
+              <li nz-menu-item>Option 6</li>
+            </ul>
+          </li>
+          <li nz-submenu nzDisabled nzTitle="Disabled Sub Menu">
+            <ul>
+              <li nz-menu-item>Option 5</li>
+              <li nz-menu-item>Option 6</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
   <li nz-submenu nzPlacement="bottomLeft" nzTitle="笔记本">
     <ul>
+
       <li nz-menu-group nzTitle="文件">
         <ul>
           <li nz-menu-item>新建</li>
@@ -45,7 +92,6 @@
       </li>
     </ul>
   </li>
-
   <li nz-submenu nzPlacement="topLeft" nzTitle="同步">
     <ul>
       <li nz-menu-group nzTitle="更新">
