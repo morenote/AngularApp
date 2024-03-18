@@ -51,9 +51,9 @@ export class VditorMarkdownEditorComponent implements OnInit, EditorInterface {
         token: 'test',
         url:  '/api/vditor/upload/' ,
         linkToImgUrl: '/api/vditor/fetch/' ,
-        filename(name) {
-          return name.replace(/[^(a-zA-Z0-9\u4e00-\u9fa5\.)]/g, '').replace(/[\?\\/:|<>\*\[\]\(\)\$%\{\}@~]/g, '').replace('/\\s/g', '')
-        },
+        // filename(name) {
+        //   return name.replace(/[^(a-zA-Z0-9\u4e00-\u9fa5\.)]/g, '').replace(/[\?\\/:|<>\*\[\]\(\)\$%\{\}@~]/g, '').replace('/\\s/g', '')
+        // },
       },
       after: () => {
         this.vditor.setValue('Hello, Vditor + Angular!');

@@ -59,6 +59,9 @@ dependencies:
   tslib:
     specifier: ^2.3.0
     version: 2.6.2
+  vditor:
+    specifier: ^3.10.1
+    version: 3.10.1
   zone.js:
     specifier: ~0.14.3
     version: 0.14.4
@@ -2358,7 +2361,7 @@ packages:
   /@marktext/file-icons@1.0.6:
     resolution: {integrity: sha512-E9xMmaa4nqSdIjLfZyabIkbNMRPwr+SexzkRqGOWfLkgWiZHNL45JkiLLFBqBqn7ERUxzPgSVFt2MGnetlq2rA==}
     dependencies:
-      file-icons: git@github.com+file-icons/atom/2b897cb11552405322896080cb3406b96e678239
+      file-icons: github.com/file-icons/atom/2b897cb11552405322896080cb3406b96e678239
     dev: false
 
   /@marktext/muya@0.2.5:
@@ -4685,6 +4688,10 @@ packages:
   /di@0.0.1:
     resolution: {integrity: sha512-uJaamHkagcZtHPqCIHZxnFrXlunQXgBOsZSUOWwFw31QJCAbyTBoHMW75YOTur5ZNx8pIeAKgf6GWIgaqqiLhA==}
     dev: true
+
+  /diff-match-patch@1.0.5:
+    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+    dev: false
 
   /diff@5.2.0:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
@@ -9558,6 +9565,12 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
+  /vditor@3.10.1:
+    resolution: {integrity: sha512-bUXBGjVubnLr0jZ/GKuKEC+fxfITD+Apkg/K9FCZtqX8bMAaA3+Q2THJoQ1cFWibcJ5QUxgCfQGKSrdiMVAiIw==}
+    dependencies:
+      diff-match-patch: 1.0.5
+    dev: false
+
   /vega-canvas@1.2.7:
     resolution: {integrity: sha512-OkJ9CACVcN9R5Pi9uF6MZBF06pO6qFpDYHWSKBJsdHP5o724KrsgR6UvbnXFH82FdsiTOff/HqjuaG8C7FL+9Q==}
     dev: false
@@ -10385,8 +10398,8 @@ packages:
     dependencies:
       tslib: 2.6.2
 
-  git@github.com+file-icons/atom/2b897cb11552405322896080cb3406b96e678239:
-    resolution: {commit: 2b897cb11552405322896080cb3406b96e678239, repo: git@github.com:file-icons/atom.git, type: git}
+  github.com/file-icons/atom/2b897cb11552405322896080cb3406b96e678239:
+    resolution: {tarball: https://codeload.github.com/file-icons/atom/tar.gz/2b897cb11552405322896080cb3406b96e678239}
     name: file-icons
     version: 2.1.47
     engines: {atom: '>=1.25.0'}

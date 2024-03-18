@@ -35,6 +35,8 @@
             ],
             "styles": [
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/vditor/src/assets/less/index.less",
+              "@marktext/muya/dist/assets/style.css",
               "src/styles.css"
             ],
             "scripts": []
