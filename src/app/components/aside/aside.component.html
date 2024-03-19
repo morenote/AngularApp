@@ -1,26 +1,14 @@
 <div class="button-area">
-
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <i nz-icon nzType="book"></i>
-  </button>
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <span nz-icon nzType="search" nzTheme="outline"></span>
-  </button>
-
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <i nz-icon nzType="branches" nzTheme="outline"></i>
-  </button>
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <i nz-icon nzType="file-zip" nzTheme="outline"></i>
-  </button>
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <span nz-icon nzType="key" nzTheme="outline"></span>
-  </button>
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <span nz-icon nzType="function" nzTheme="outline"></span>
-  </button>
-  <button class="btn"  nz-button nzType="dashed" nzSize="default" nzShape="circle">
-    <i nz-icon nzType="delete" nzTheme="outline"></i>
+  <button
+    class="btn"
+    nz-button
+    nzType="dashed"
+    nzSize="default"
+    nzShape="circle"
+    *ngFor="let icon of icons"
+    (click)="optionClick(icon)"
+  >
+    <i nz-icon [nzType]="icon"></i>
   </button>
 </div>
 <div class="tree-area">
