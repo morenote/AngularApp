@@ -6,7 +6,7 @@ let win: BrowserWindow | null = null;
 const args = process.argv.slice(1),
   serve = args.some(val => val === '--serve');
 
-function createWindow(): BrowserWindow {
+async function createWindow(): Promise<BrowserWindow> {
 
   const size = screen.getPrimaryDisplay().workAreaSize;
 
@@ -28,7 +28,7 @@ function createWindow(): BrowserWindow {
     debug();
 
     require('electron-reloader')(module);
-    win.loadURL('http://localhost:4200');
+    await win.loadURL('http://localhost:4200');
   } else {
     // Path when running electron executable
     let pathIndex = './index.html';
@@ -39,7 +39,7 @@ function createWindow(): BrowserWindow {
     }
 
     const url = new URL(path.join('file:', __dirname, pathIndex));
-    win.loadURL(url.href);
+    await win.loadURL(url.href);
   }
 
   // Emitted when the window is closed.
@@ -69,11 +69,11 @@ try {
     }
   });
 
-  app.on('activate', () => {
+  app.on('activate', async () => {
     // On OS X it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (win === null) {
-      createWindow();
+      await createWindow();
     }
   });
 

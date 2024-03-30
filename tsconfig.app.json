@@ -7,7 +7,7 @@
   },
   "files": [
     "src/main.ts",
-    "app/main.ts"
+    "node/main.ts"
   ],
   "include": [
     "src/**/*.d.ts"
