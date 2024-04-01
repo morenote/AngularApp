@@ -1,17 +1,12 @@
 {
   "name": "angular-app",
   "version": "0.0.0",
-  "main": "node/main.js",
   "scripts": {
     "ng": "ng",
     "ng:serve": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "electron:serve-tsc": "tsc -p tsconfig.serve.json",
-    "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && electron . --serve",
-    "start": "npm-run-all -p electron:serve ng:serve",
-    "electron": " electron ."
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +23,6 @@
     "@marktext/muya": "^0.2.5",
     "@textbus/editor": "^3.7.4",
     "date-fns": "2.30.0",
-    "electron": "^29.1.0",
     "monaco-editor": "0.33.0",
     "ng-zorro-antd": "^17.2.0",
     "rxjs": "~7.8.0",
@@ -42,9 +36,7 @@
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "20.10.5",
-    "electron-builder": "24.9.1",
-    "electron-debug": "3.2.0",
-    "electron-reloader": "1.2.3",
+
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
