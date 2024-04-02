@@ -20,14 +20,14 @@
 }
 .aside {
   height: 100%;
-  width: 300px;
+  width: 240px;
   float: left;
   /*background: yellow;*/
 }
 
 .main {
   height: 100%;
-  width: calc(100% - 300px);;
+  width: calc(100% - 240px);;
   /*background: aqua;*/
-  margin-left: 300px;
+  margin-left: 240px;
 }

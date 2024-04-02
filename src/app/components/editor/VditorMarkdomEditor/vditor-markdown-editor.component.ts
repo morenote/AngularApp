@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import Vditor from 'vditor';
 import {EditorInterface} from "../editor-interface";
 
@@ -11,20 +11,26 @@ import {EditorInterface} from "../editor-interface";
 })
 export class VditorMarkdownEditorComponent implements OnInit, EditorInterface {
 
+  @ViewChild('editor')
+  editor!: ElementRef;
+
 
 
   public vditor!: Vditor;
 
   ngOnInit() {
-    this.vditor = new Vditor('vditor', {
+    console.log("editor_id="+this.editor)
+    this.vditor = new Vditor(this.editor.nativeElement, {
       mode: 'ir',
-
+      height:500,
+      width:1200,
       outline: {
         enable: true,
         position: 'right',
       },
       typewriterMode: true,
       placeholder: 'Hello, Vditor!',
+
       preview: {
         markdown: {
           toc: true,
@@ -46,6 +52,9 @@ export class VditorMarkdownEditorComponent implements OnInit, EditorInterface {
       },
       undoDelay: 60,
       tab: '\t',
+      cache:{
+        enable:false
+      },
       upload: {
         accept: 'image/*,.mp3, .wav, .rar',
         token: 'test',

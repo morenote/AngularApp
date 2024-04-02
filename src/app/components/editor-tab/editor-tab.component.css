@@ -2,3 +2,14 @@
   height: 100%;
   width: 100%;
 }
+.app-editor-container{
+  display: block;
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+}
+.am-tab-content{
+  display: block;
+  height: 100%;
+  width: 100%;
+}

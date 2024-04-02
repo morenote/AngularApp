@@ -4,7 +4,6 @@
       <span nz-icon [nzType]="tab.icon"></span>
       {{ tab.name }}
     </ng-template>
-    <app-muya-editor [editor_id]="tab.name"></app-muya-editor>
-<!--    <app-VditorMarkdownEditor [id]=tab.name></app-VditorMarkdownEditor>-->
+    <app-editor-container  [container_id]="tab.name" class="app-editor-container"></app-editor-container>
   </nz-tab>
 </nz-tabset>

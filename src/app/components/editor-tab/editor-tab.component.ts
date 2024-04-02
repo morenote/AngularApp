@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import {
+  AfterViewInit, ChangeDetectorRef,
+  Component,
+  ComponentRef, Inject,
+  inject,
+  OnInit,
+  ViewChild,
+  ViewContainerRef
+} from '@angular/core';
 import {NzTabComponent, NzTabSetComponent} from "ng-zorro-antd/tabs";
 import {NzIconDirective} from "ng-zorro-antd/icon";
 import {NgForOf} from "@angular/common";
 import {MuyaEditorComponent} from "../editor/muya-editor/muya-editor.component";
 import {VditorMarkdownEditorComponent} from "../editor/VditorMarkdomEditor/vditor-markdown-editor.component";
+
+import {EditorInterface} from "../editor/editor-interface";
+import {EditorContainerComponent} from "../editor/editor-container/editor-container.component";
 
 
 @Component({
@@ -15,12 +26,15 @@ import {VditorMarkdownEditorComponent} from "../editor/VditorMarkdomEditor/vdito
     NzIconDirective,
     NgForOf,
     MuyaEditorComponent,
-    VditorMarkdownEditorComponent
+    VditorMarkdownEditorComponent,
+    EditorContainerComponent
+
   ],
   templateUrl: './editor-tab.component.html',
   styleUrl: './editor-tab.component.css'
 })
-export class EditorTabComponent {
+export class EditorTabComponent  {
+
   tabs = [
     {
       name: 'Tab1',
@@ -28,7 +42,15 @@ export class EditorTabComponent {
     },
     {
       name: 'Tab2',
-      icon: 'android'
-    }
+      icon: 'apple'
+    },
+
   ];
+
+
+
+
+
+
+
 }
