@@ -43,7 +43,7 @@ export class TextbusEditorComponent implements OnInit, EditorInterface {
   }
 
   GetContent(): string {
-    return this.editor!.getContents().content;
+    return this.editor!.getHTML();
   }
 
   Disabled(): void {

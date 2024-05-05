@@ -22,8 +22,7 @@ export class VditorMarkdownEditorComponent implements OnInit, EditorInterface {
     console.log("editor_id="+this.editor)
     this.vditor = new Vditor(this.editor.nativeElement, {
       mode: 'ir',
-      height:500,
-      width:1200,
+
       outline: {
         enable: true,
         position: 'right',
